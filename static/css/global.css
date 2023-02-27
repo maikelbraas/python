@@ -1,0 +1,37 @@
+#banner{
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+h1, h2, p{
+  font-family: Roboto;
+  font-weight: normal;
+}
+
+p{
+  color: rgba(80, 80, 80, 1);
+}
+
+h2{
+  font-size: 32px;
+  color: rgba(50, 50, 50, 1);
+  text-align: center;
+}
+
+h1{
+  font-size: 40px;
+  color: rgba(100, 100, 100, 1);
+  text-align: center;
+}
+
+#about-this{
+  width: 60%;
+  margin: 0 auto;
+}
+
+#tasks{
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+}

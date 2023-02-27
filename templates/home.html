@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+</head>
+<body>
+  <main>
+    <section>
+      <h1>This is a tutorial for python</h1>
+      <img id="banner" src="https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Ribbons-and-Banners-PNG/Decorative_Banner_Transparent_PNG_Picture.png?m=1434276917" alt="">
+    </section>
+    <section id="about-this">
+      <h2>About this page</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi amet voluptatum quibusdam quam exercitationem optio suscipit dolorum dolor necessitatibus officiis maiores, ex ipsum, excepturi reprehenderit omnis! Iusto, aspernatur. Cumque, eaque!</p>
+    </section>
+    <section id="tasks">
+      <h2>Tasks</h2>
+        {% for task in tasks %}
+          <article>
+            <h2>{{ task['title'] }}</h2>
+            <p>{{ task['content'] }}</p>
+          </article>
+        {% endfor %}
+        <button>Show task</button>
+    </section>
+  </main>
+</body>
+</html>
